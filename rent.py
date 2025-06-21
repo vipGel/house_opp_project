@@ -2,15 +2,18 @@ from housing import Housing
 from person import Renter
 
 
+# An abstract class
 class Rent:
     def __init__(self, housing: Housing, price: float):
         self.renter = Renter
         self.housing = housing
         self.price = price
 
+    # Counts overall price of rent
     def overall_price(self):
         raise Exception("Unimplemented")
 
+    # Changes renter
     def renting(self, renter: Renter):
         self.renter = renter
         self.housing.print_info()

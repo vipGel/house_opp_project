@@ -1,4 +1,6 @@
+# An abstract class
 class Location:
+    # Returns information about location
     def info(self) -> str:
         raise Exception("Unimplemented!")
 

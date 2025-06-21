@@ -22,6 +22,7 @@ def main():
     house.print_info()
     house_sale = Sale(house, 1000000)
     apartment_rent = RentForMonth(apartment, 3000, 6)
+    print(f"Overall price {apartment_rent.overall_price()}")
 
     buyer = Buyer("John Buyer")
     print("I'm gonna buy a house")

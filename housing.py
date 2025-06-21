@@ -4,6 +4,7 @@ from person import Person
 from renovation import Renovation
 
 
+# An abstract class
 class Housing:
     def __init__(self, area: float, location: Location, owner: Person, room_count: int):
         self.area = area
@@ -11,12 +12,14 @@ class Housing:
         self.owner = owner
         self.room_count = room_count
 
+    # Prints all housing info
     def print_info(self):
         print(f"Area: {self.area}")
         print(f"Location: {self.location.info()}")
-        print(f"Owner: ${self.owner.name}")
+        print(f"Owner: {self.owner.name}")
         print(f"Roon count: {self.room_count}")
 
+    # Changes owner
     def change_owner(self, new_owner: Person):
         self.owner = new_owner
 
