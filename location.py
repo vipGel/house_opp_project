@@ -8,7 +8,7 @@ class Downtown(Location):
         self.city_name = city_name
 
     def info(self):
-        return f"Downtown of ${self.city_name}"
+        return f"Downtown of {self.city_name}"
 
 
 class Outskirts(Location):
@@ -16,7 +16,7 @@ class Outskirts(Location):
         self.city_name = city_name
 
     def info(self):
-        return f"Outskirts of ${self.city_name}"
+        return f"Outskirts of {self.city_name}"
 
 
 class Village(Location):
@@ -24,5 +24,5 @@ class Village(Location):
         self.city_name = village_name
 
     def info(self):
-        return f"Village named ${self.city_name}"
+        return f"Village named {self.city_name}"
 

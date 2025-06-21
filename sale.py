@@ -9,6 +9,6 @@ class Sale:
 
     def sell(self, buyer: Buyer):
         self.housing.change_owner(buyer)
-        print(f"Sold to ${buyer.name}")
+        print(f"Sold to {buyer.name}")
         self.housing.print_info()
 
